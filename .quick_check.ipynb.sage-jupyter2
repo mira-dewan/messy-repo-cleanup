@@ -1,0 +1,6 @@
+{"backend_state":"ready","kernel":"python3","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"last_backend_state":1763138251526,"last_ipynb_save":1763138265940,"metadata":{"language_info":{"name":"python","version":"3.8.0"}},"type":"settings"}
+{"cell_type":"code","id":"373d57","input":"# Load and peek at data\nimport pandas as pd\n\n# Try different file paths\ntry:\n    df = pd.read_csv('data/sales_data.csv')\n    print(\"Found sales data!\")\n    print(df.shape)\nexcept:\n    print(\"Couldn't find sales data file\")","pos":2,"type":"cell"}
+{"cell_type":"code","id":"d2486e","input":"# Quick check of CSV files\nimport os\nprint(\"Files in current directory:\")\nfor f in os.listdir('.'):\n    if f.endswith('.csv'):\n        print(f\"- {f}\")","pos":1,"type":"cell"}
+{"cell_type":"markdown","id":"9dda44","input":"# Quick Data Check\n\nJust a quick notebook to check the data files.\nThis might be outdated - check other notebooks too.","pos":0,"type":"cell"}
+{"id":0,"time":1763138251151,"type":"user"}
+{"last_load":1763138251534,"type":"file"}
